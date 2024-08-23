@@ -6,10 +6,10 @@ function App(){
   return(
     <>
       <Header />
-      <Main />
-      <Footer />
+      <Main></Main>
+      <Footer autor="Luana"/>
     </>
   )
 }
 
-export default App
+export default App 

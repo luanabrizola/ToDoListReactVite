@@ -1,9 +1,19 @@
-function Footer(){
+import styles from "./Footer.module.css"
+
+
+function Footer(props){
+
+    let {autor} = props;
+    let ano = new Date().getFullYear();
+
     return(
-        <>
-            <h1>Rodapé</h1>
-        </>
+        <div className={styles.Footer}>
+            React - {props.autor} - {props.ano}
+        </div>
+
     )
+    
 }
 
 export default Footer
+

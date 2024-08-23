@@ -1,6 +1,17 @@
+import styles from "./Header.module.css"
+import "./Header.module.css"
+
 function Header(){
     return(
-        <h1>Header</h1>
+        
+        <div className={styles.header}>
+            <h1>
+                <span>todo</span> list
+
+            </h1>
+
+        </div>
+        
     )
 }
 

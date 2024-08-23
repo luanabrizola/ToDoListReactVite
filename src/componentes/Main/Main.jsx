@@ -1,9 +1,14 @@
-function Main(){
+import styles from "./Main.module.css"
+
+
+function Main(props){
+    let {children} = props
     return(
-        <>
-            <h1>Conteudo</h1>
-        </>
+        <div className={styles.Main}>
+            {children}
+        </div>
+
     )
 }
 export default Main
- 
+
