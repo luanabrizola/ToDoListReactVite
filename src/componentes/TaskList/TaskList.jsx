@@ -1,13 +1,24 @@
-function TaskList(){
-    return(
-        <div className={styles.TaskList}>
-            <ul>
-                <li>Item 1</li>
-                <li>Item 2</li>
-            </ul>
-            
-        </div>
-    );
-};
+import { TaskItem } from './TaskItem/TaskItem'
+import styles from './TaskList.module.css'
 
-export default TaskList
+export function TaskList() {
+
+  const listaTarefas = [
+    {id:1, tarefa: "Estudar"},
+    {id:2, tarefa: "Lavar a Louça"},
+    {id:3, tarefa: "Ir à academia"},    
+    {id:4, tarefa: "Tomar banho"},    
+  ]
+
+  
+  return (
+    <ul className={styles.TaskList}>
+
+        {
+          listaTarefas.map(item => <TaskItem texto={item.tarefa} />)
+        }  
+        
+          
+        </ul>
+  )
+}
